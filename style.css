@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #8BC6EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 550px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 12px;
+}
+.mainCon{
+    height: fit-content;
+    gap: 2rem;
+    width: 600px;
+    padding: 20px;
+    color: black;
+    /* border: 4px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.mainCon h1{
+    text-align: center;
+}
+.userCon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.userInput{
+    display: flex;
+    justify-content: space-between;
+}
+.userInput input{
+    height: 35px;
+    width: 450px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.userInput button{
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    background-color : rgb(63, 30, 255);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+.statsProgress{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.progressItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 140px;
+    border: 5px solid rgb(63, 30, 255);
+    border-radius: 50%;
+    color: black;
+}
+#easyLevel{
+    background: conic-gradient(rgb(63, 30, 255) var(--easy-degree, 0%), #8BC6EC 0%);
+    display: flex;
+    flex-direction: column;
+}
+#mediumLevel{
+    background: conic-gradient(rgb(63, 30, 255) var(--medium-degree, 0%), #8BC6EC 0%);
+    display: flex;
+    flex-direction: column;
+}
+#hardLevel{
+    background: conic-gradient(rgb(63, 30, 255) var(--hard-degree, 0%), #8BC6EC 0%);
+    display: flex;
+    flex-direction: column;
+}
+#statsCards{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card{
+    height: 70px;
+    border: 2px solid black;
+    background-color: #8BC6EC;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
